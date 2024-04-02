@@ -1,0 +1,24 @@
+{% extends "nav.html" %}
+
+{% block content %}
+<div class="feed-container">
+    <form action="/new" method="POST">
+        {{ form.csrf_token }}
+        <p>
+            {{ form.caption.label }}:
+            {{ form.caption }}
+        </p>
+        <p>
+            {{ form.image_url.label }}:
+            {{ form.image_url }}
+        </p>
+        <p>
+            {{ form.submit }}
+        </p>
+
+    </form>
+</div>
+
+
+
+{% endblock %}

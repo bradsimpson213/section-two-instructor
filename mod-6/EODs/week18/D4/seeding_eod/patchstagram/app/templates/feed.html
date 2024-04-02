@@ -1,0 +1,24 @@
+{% extends "nav.html" %}
+
+{% block content %}
+<div class="feed-container">
+    {% for post in posts %}
+        <div class="post-container">
+            <div class="post-box">
+                <div class="post-author">
+                    <img src="{{ post.user.profile_pic }}"
+                    class="profile-pic" />
+                    <h2>{{ post.user.username }}</h2>
+                </div>
+                <h3>{{ post.post_date }}</h3>
+            </div>
+            <div>
+                <img class="post-image" src="{{ post.image }}" />
+                <p class="post-text">{{ post.caption }}</p>
+                <p class="post-text">{{ post.post_likes | length }} Likes</p>
+            </div>
+        </div>       
+    {% endfor %}
+
+</div>
+{% endblock %}

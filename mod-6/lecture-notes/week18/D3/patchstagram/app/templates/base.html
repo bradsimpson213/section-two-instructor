@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="icon" href="{{ url_for('static', filename='favicon32.png') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+        <title>Patchstagram</title>
+    </head>
+  
+    <body>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/all">Posts</a>
+            <a href="/new">New Posts</a>
+        </nav>
+    {% block navbar %} 
+    {% endblock %}
+    </body>
+    {% include "footer.html" %}
+</html>
