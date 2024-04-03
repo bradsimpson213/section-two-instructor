@@ -1,0 +1,17 @@
+{
+  "name": "aa10-express-initialize-app",
+  "version": "1.0.0",
+  "description": "In this phase, you will create a new Express project and initialize an Express application to listen for requests on a port. You will also return a simple text response on the `/status` route.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}
