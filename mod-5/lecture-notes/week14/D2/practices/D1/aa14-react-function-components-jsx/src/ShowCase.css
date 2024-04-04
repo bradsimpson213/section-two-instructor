@@ -1,0 +1,12 @@
+.showcase-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-image {
+    border-radius: 90px;
+    height: 200px;
+    width: 200px;
+}
